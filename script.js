@@ -44,3 +44,33 @@ form.addEventListener("submit", function(e){
 
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
 });
+
+// Accessible mobile navigation
+const menuToggle = document.querySelector(".menu-toggle");
+const primaryNavigation = document.getElementById("primary-navigation");
+if (menuToggle && primaryNavigation) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = primaryNavigation.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
+  primaryNavigation.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      primaryNavigation.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    });
+  });
+}
+
+// Keep checkout on or after check-in when dates are selected.
+const checkinField = document.getElementById("checkin");
+const checkoutField = document.getElementById("checkout");
+if (checkinField && checkoutField) {
+  checkinField.addEventListener("change", () => {
+    checkoutField.min = checkinField.value || "";
+    if (checkoutField.value && checkinField.value && checkoutField.value < checkinField.value) {
+      checkoutField.value = "";
+    }
+  });
+}

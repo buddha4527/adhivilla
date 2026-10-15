@@ -1,40 +1,19 @@
-ADHI VILLA WEBSITE — UPDATED VERSION
+# Adhi Villa website — polished version
 
-Files:
-- index.html
-- styles.css
-- script.js
-- assets/
+## Included
+- `index.html` — updated website structure and real logo placement
+- `styles.css` — refined styling, mobile navigation, accessibility and responsive adjustments
+- `script.js` — hero slideshow, WhatsApp enquiry form, mobile menu and date validation
+- `assets/adhi-villa-logo.png` — transparent logo crop based on the logo image supplied
+- `assets/favicon.svg` — simple matching browser icon
 
-The assets folder contains the selected and renamed photographs supplied for this redesign.
+## Important: preserve your existing property photos
+Copy your existing `assets` photo files into this package's `assets/` folder before publishing. The website references the photo names already used in your original HTML (for example `villa-courtyard.jpg`, `treehouse.jpg`, `bedroom.jpg`, `paddy-fields.jpg`). They were not included among the files supplied in this chat, so they are not duplicated here.
 
-HOW TO USE:
-1. Replace your current index.html, styles.css and script.js in the GitHub repository with these files.
-2. Replace/add the assets folder from this package.
-3. Commit/push the changes.
-4. GitHub Pages should publish the updated site automatically.
+## Publish
+1. Back up the current GitHub repository.
+2. Replace `index.html`, `styles.css`, and `script.js` with these versions.
+3. Add `adhi-villa-logo.png` and `favicon.svg` to your existing `assets/` folder, keeping all existing property photos.
+4. Commit and push. GitHub Pages should publish automatically.
 
-IMPORTANT:
-- The Google Maps button uses the location link you supplied:
-  https://maps.app.goo.gl/MrywyLWP3Kj6Gwdj8
-- WhatsApp enquiries go to +91 9946 914 766.
-- The favicon is a simple recreated flower-style mark because the original logo file was not available. Replace assets/favicon.svg later if you recover the original logo.
-- The current website does not require a server or database; the enquiry form opens WhatsApp directly.
-
-PHOTO MAPPING:
-villa-courtyard.jpg      -> main villa/courtyard
-villa-garden.jpg         -> garden/property
-treehouse.jpg            -> treehouse
-treehouse-veranda.jpg    -> treehouse veranda
-treehouse-garden.jpg     -> forest-side treehouse view
-bedroom.jpg              -> room
-brahmagiri-peak.jpg      -> Brahmagiri
-brahmagiri-trail.jpg     -> Brahmagiri trail
-village-paddy-path.jpg   -> village/paddy walk
-paddy-fields.jpg         -> landscape
-river-life.jpg           -> river experience
-forest-river.jpg         -> forest/river
-wildlife-elephants.jpg   -> wildlife
-kerala-food.jpg          -> Kerala food
-villa-ficus.jpg          -> villa courtyard/detail
-thirunelli-landscape.jpg -> Thirunelli landscape
+The WhatsApp contact and Google Maps link have been retained from your original website. Preview the site after publishing and check the logo crop on desktop and mobile; if you have the original logo file (PNG/SVG/PDF), use that for the sharpest result.

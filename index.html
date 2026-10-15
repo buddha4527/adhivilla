@@ -6,6 +6,10 @@
 <title>Adhi Villa | Sarvani, Thirunelli, Wayanad</title>
 <meta name="description" content="Adhi Villa in Sarvani, near Thirunelli, Wayanad — a quiet village stay surrounded by forest, hills and rural Kerala.">
 <meta name="theme-color" content="#173b2b">
+<meta property="og:title" content="Adhi Villa | A Quiet Village Stay in Thirunelli, Wayanad">
+<meta property="og:description" content="A quiet village stay in Sarvani, near Thirunelli, surrounded by forest, fields and mountain country.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/adhi-villa-logo.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +20,11 @@
 
 <header class="nav">
   <a class="brand" href="#top" aria-label="Adhi Villa home">
-    <span>ADHI</span> VILLA
-    <small>SARVANI · THIRUNELLI · WAYANAD</small>
+    <img src="assets/adhi-villa-logo.png" alt="Adhi Villa" width="350" height="159">
+    <span class="brand-location">SARVANI · THIRUNELLI · WAYANAD</span>
   </a>
-  <nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+  <nav id="primary-navigation">
     <a href="#stay">Stay</a>
     <a href="#experiences">Experiences</a>
     <a href="#food">Food</a>
@@ -34,8 +39,8 @@
 <section class="hero">
   <div class="hero-slides" aria-hidden="true">
     <div class="hero-slide active" style="background-image:url('assets/villa-courtyard.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/photo-18.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/photo-30.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/treehouse.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/villa-garden.jpg')"></div>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-copy">
@@ -166,7 +171,7 @@
 </section>
 
 <section class="wide-image">
-  <img src="assets/paddy-fields.jpg" alt="Paddy fields and hills around Thirunelli">
+  <img src="assets/paddy-fields.jpg" alt="Paddy fields and hills around Thirunelli" loading="lazy">
   <div class="wide-caption">
     <span>THE LANDSCAPE</span>
     <strong>Forest, fields and mountains — all part of the stay.</strong>
@@ -228,17 +233,17 @@
   </div>
 
   <div class="gallery-grid">
-    <figure class="g-wide"><img src="assets/villa-exterior.jpg" alt="Adhi Villa exterior"></figure>
-    <figure><img src="assets/villa-garden.jpg" alt="Garden and traditional details at Adhi Villa"></figure>
-    <figure class="g-tall"><img src="assets/treehouse.jpg" alt="Adhi Villa treehouse"></figure>
-    <figure><img src="assets/treehouse-veranda.jpg" alt="Treehouse veranda surrounded by forest"></figure>
-    <figure class="g-wide"><img src="assets/brahmagiri-trail.jpg" alt="Trail through Brahmagiri hills"></figure>
-    <figure><img src="assets/wildlife-elephants.jpg" alt="Elephants in the Wayanad forest"></figure>
-    <figure><img src="assets/forest-river.jpg" alt="Quiet forest river landscape"></figure>
-    <figure class="g-tall"><img src="assets/villa-ficus.jpg" alt="Adhi Villa courtyard beneath a fig tree"></figure>
-    <figure><img src="assets/paddy-fields.jpg" alt="Paddy fields near Thirunelli"></figure>
-    <figure><img src="assets/bedroom.jpg" alt="Bedroom at Adhi Villa"></figure>
-    <figure class="g-wide"><img src="assets/brahmagiri-peak.jpg" alt="Brahmagiri mountain landscape"></figure>
+    <figure class="g-wide"><img src="assets/villa-exterior.jpg" alt="Adhi Villa exterior" loading="lazy"></figure>
+    <figure><img src="assets/villa-garden.jpg" alt="Garden and traditional details at Adhi Villa" loading="lazy"></figure>
+    <figure class="g-tall"><img src="assets/treehouse.jpg" alt="Adhi Villa treehouse" loading="lazy"></figure>
+    <figure><img src="assets/treehouse-veranda.jpg" alt="Treehouse veranda surrounded by forest" loading="lazy"></figure>
+    <figure class="g-wide"><img src="assets/brahmagiri-trail.jpg" alt="Trail through Brahmagiri hills" loading="lazy"></figure>
+    <figure><img src="assets/wildlife-elephants.jpg" alt="Elephants in the Wayanad forest" loading="lazy"></figure>
+    <figure><img src="assets/forest-river.jpg" alt="Quiet forest river landscape" loading="lazy"></figure>
+    <figure class="g-tall"><img src="assets/villa-ficus.jpg" alt="Adhi Villa courtyard beneath a fig tree" loading="lazy"></figure>
+    <figure><img src="assets/paddy-fields.jpg" alt="Paddy fields near Thirunelli" loading="lazy"></figure>
+    <figure><img src="assets/bedroom.jpg" alt="Bedroom at Adhi Villa" loading="lazy"></figure>
+    <figure class="g-wide"><img src="assets/brahmagiri-peak.jpg" alt="Brahmagiri mountain landscape" loading="lazy"></figure>
   </div>
 </section>
 
@@ -286,7 +291,7 @@
 
 <footer id="contact">
   <div>
-    <a class="brand footer-brand" href="#top"><span>ADHI</span> VILLA<small>SARVANI · THIRUNELLI · WAYANAD</small></a>
+    <a class="brand footer-brand" href="#top" aria-label="Adhi Villa home"><img src="assets/adhi-villa-logo.png" alt="Adhi Villa" width="350" height="159"><span class="brand-location">SARVANI · THIRUNELLI · WAYANAD</span></a>
     <p>A quiet village stay near Thirunelli, surrounded by forest, fields and mountain country.</p>
   </div>
   <div>
